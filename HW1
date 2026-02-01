@@ -1,12 +1,13 @@
+#Govan Henry HW1 CMSC438  1/30/26
 import numpy as np
 
 def dotting(f):
     # Initialize variables and dotted variables
-    var = []
-    dotted = []
+    var = [] #store variables
+    dotted = [] #store dotted
 
-    for instruction in f:
-        op = instruction[0]
+    for instruction in f: #iterate through each instruction
+        op = instruction[0] #get operation type
 
         if op == 'X':  # Input x
             value = instruction[1]
